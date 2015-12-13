@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-MACHINE_NAME=good_vs_evil
+MACHINE_NAME=$1
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MPF=$DIR/../mpf/
