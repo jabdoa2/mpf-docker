@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:15.10
 
 RUN apt-get -y update
 RUN apt-get -y install python3.4 python3-pip
