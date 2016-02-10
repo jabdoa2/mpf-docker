@@ -1,14 +1,16 @@
 #!/bin/bash
 set -e
 
-#apt-get update
+apt-get update
 apt-get -y install python3-dev cmake gcc g++ build-essential git-core zlib1g-dev libudev-dev libusb-dev pkg-config libboost-dev
 
 cd /tmp/
 
 if apt-cache show libftdi1-2 > /dev/null 2> /dev/null; then
+    # use libftdi1-2 if available
     apt-get install libftdi1-dev libftdi1-2
 else
+    # otherwise download and compile
     sudo apt-get install -y swig libconfuse-dev libboost-all-dev wget libusb-1.0-0-dev
     wget http://www.intra2net.com/en/developer/libftdi/download/libftdi1-1.2.tar.bz2
     tar xvf libftdi1-1.2.tar.bz2
