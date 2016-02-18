@@ -23,6 +23,8 @@ else
 fi
 
 
+
+# TODO: replace with installing deb
 git clone --branch dev https://github.com/jabdoa2/libpinproc.git libpinproc
 cd libpinproc
 mkdir bin
@@ -35,6 +37,8 @@ make install
 cd ..
 cd ..
 
+
+# TODO: replace with pip3 install pypinproc
 git clone --branch dev https://github.com/missionpinball/pypinproc.git pypinproc
 cd pypinproc
 python3 setup.py install
