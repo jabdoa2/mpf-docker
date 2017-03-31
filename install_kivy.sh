@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+apt-get install -y software-properties-common python-software-properties
+
 add-apt-repository -y ppa:kivy-team/kivy
 apt-get update
 

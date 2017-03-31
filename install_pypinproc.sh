@@ -39,6 +39,6 @@ cd ..
 
 
 # TODO: replace with pip3 install pypinproc
-git clone --branch dev https://github.com/missionpinball/pypinproc.git pypinproc
+git clone https://github.com/missionpinball/pypinproc.git pypinproc
 cd pypinproc
 python3 setup.py install
